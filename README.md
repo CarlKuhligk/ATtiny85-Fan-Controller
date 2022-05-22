@@ -1,4 +1,4 @@
-#Use
+# Use
 This project was created for using an nvidia tesla graphics card in a virtual machine. The host system is Proxmox. Proxmox forwards the GPU to the VM. In order to achieve this, Proxmox is not allowed to use the GPU, which is why no drivers are installed. That's why proxmox cannot determine the temperature of the GPU directly.
 
 The usb controller can be passed through at proxmox, so that the virtual machine can control the fan.
