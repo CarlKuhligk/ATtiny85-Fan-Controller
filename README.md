@@ -2,16 +2,22 @@
 It uses [V-USB](https://www.obdev.at/products/vusb/index.html) to build a [USB communication device class (CDC)](https://en.wikipedia.org/wiki/USB_communications_device_class) for serial communication via USB with the ATtiny. The PWM value is send via the USB device. If the Value is "0" the Fan gets turned off. Example "echo "65" > /dev/ttyACM0"
 
 ![pic1.jpg](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/IMG_20220520_110823.jpg)
-![pic2.jpg](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/IMG_20220520_110706.jpg)
-![pic3.jpg](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/IMG_20220520_110726.jpg)
+
 
 # Hardware
 The schematic is shown below:
+![schematic.png](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/Simple_Schematic.png)
 
-![schematic.png](https://github.com/wagiminator/ATtiny85-TinyTerminal/blob/main/documentation/TinyTerminal_wiring.png)
+Not pretty but functional
+![pic2.jpg](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/IMG_20220520_110706.jpg)
+![pic3.jpg](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/IMG_20220520_110726.jpg)
+
+Housing for the circuit board
+![box](https://user-images.githubusercontent.com/87583841/169691579-dab364ed-fa7d-433d-a732-912c28a1b767.png)
+
 
 # Software
-The communication via USB is handled by the V-USB software-only implementation of a low-speed USB device. To simplify the software development with the Arduino IDE the [VUSB_AVR board package](https://github.com/wagiminator/VUSB-AVR) is used. It includes the VUSB_CDC library, which makes it easy to implement a serial communication via USB. The I²C OLED routine is based on [tinyOLEDdemo](https://github.com/wagiminator/ATtiny13-TinyOLEDdemo). The rest was adapted from the [Tiny Terminal by David Johnson-Davies](http://www.technoblogy.com/show?TV4).
+The communication via USB is handled by the V-USB software-only implementation of a low-speed USB device. To simplify the software development with the Arduino IDE the [VUSB_AVR board package](https://github.com/wagiminator/VUSB-AVR) is used. It includes the VUSB_CDC library, which makes it easy to implement a serial communication via USB.
 
 # Compiling, Uploading and Testing
 - Open Arduino IDE.
