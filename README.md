@@ -2,7 +2,8 @@
 It uses [V-USB](https://www.obdev.at/products/vusb/index.html) to build a [USB communication device class (CDC)](https://en.wikipedia.org/wiki/USB_communications_device_class) for serial communication via USB with the ATtiny. The PWM value is send via the USB device. If the Value is "0" the Fan gets turned off. Example "echo "65" > /dev/ttyACM0"
 
 ![pic1.jpg](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/IMG_20220520_110823.jpg)
-![pic2.jpg](https://github.com/wagiminator/ATtiny85-TinyTerminal/blob/main/documentation/TinyTerminal_pic2.jpg)
+![pic2.jpg](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/IMG_20220520_110706.jpg)
+![pic3.jpg](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/IMG_20220520_110726.jpg)
 
 # Hardware
 The schematic is shown below:
