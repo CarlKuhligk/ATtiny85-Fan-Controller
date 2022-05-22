@@ -23,6 +23,7 @@ Housing for the circuit board
 ![box](https://user-images.githubusercontent.com/87583841/169691579-dab364ed-fa7d-433d-a732-912c28a1b767.png)
 
 Adapter for Nvidia Tesla
+
 ![adapter](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/pic1.PNG)
 
 
