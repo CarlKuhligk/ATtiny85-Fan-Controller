@@ -22,6 +22,9 @@ Not pretty but functional
 Housing for the circuit board
 ![box](https://user-images.githubusercontent.com/87583841/169691579-dab364ed-fa7d-433d-a732-912c28a1b767.png)
 
+Adapter for Nvidia Tesla
+
+STL: https://www.thingiverse.com/thing:5391731
 
 # Software
 The communication via USB is handled by the V-USB software-only implementation of a low-speed USB device. To simplify the software development with the Arduino IDE the [VUSB_AVR board package](https://github.com/wagiminator/VUSB-AVR) is used. It includes the VUSB_CDC library, which makes it easy to implement a serial communication via USB.
