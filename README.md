@@ -16,16 +16,15 @@ The schematic is shown below:
 ![schematic.png](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/Simple_Schematic.png)
 
 Not pretty but functional
+
 ![pic2.jpg](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/IMG_20220520_110706.jpg)
 ![pic3.jpg](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/IMG_20220520_110726.jpg)
 
-Housing for the circuit board
+## Housing for the circuit board
 ![box](https://user-images.githubusercontent.com/87583841/169691579-dab364ed-fa7d-433d-a732-912c28a1b767.png)
 
-Adapter for Nvidia Tesla
-
+## Adapter for Nvidia Tesla
 ![adapter](https://github.com/CarlKuhligk/ATtiny85-Fan-Controller/blob/main/documentation/pic1.PNG)
-
 
 STL: https://www.thingiverse.com/thing:5391731
 
