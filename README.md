@@ -1,3 +1,10 @@
+#Use
+This project was created for using an nvidia tesla graphics card in a virtual machine. The host system is Proxmox. Proxmox forwards the GPU to the VM. In order to achieve this, Proxmox is not allowed to use the GPU, which is why no drivers are installed. That's why proxmox cannot determine the temperature of the GPU directly.
+
+The usb controller can be passed through at proxmox, so that the virtual machine can control the fan.
+
+Finally, a small python script is required, which reads the gpu temperature and regulates the fan accordingly.
+
 # USB Fan pwm controller based on ATtiny45/85
 It uses [V-USB](https://www.obdev.at/products/vusb/index.html) to build a [USB communication device class (CDC)](https://en.wikipedia.org/wiki/USB_communications_device_class) for serial communication via USB with the ATtiny. The PWM value is send via the USB device. If the Value is "0" the Fan gets turned off. Example "echo "65" > /dev/ttyACM0"
 
