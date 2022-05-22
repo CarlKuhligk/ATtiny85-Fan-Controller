@@ -1,5 +1,5 @@
-# TinyTerminal - USB controlled OLED based on ATtiny85
-TinyTerminal is a simple USB controlled 128x64 pixels I2C OLED display. It uses [V-USB](https://www.obdev.at/products/vusb/index.html) to build a [USB communication device class (CDC)](https://en.wikipedia.org/wiki/USB_communications_device_class) for serial communication via USB with the ATtiny. Text messages of all kinds can be sent via the USB interface and shown on the OLED display. The integrated buzzer gives an acoustic signal for every message received.
+# USB PWM Fan controller based on ATtiny45/85
+It uses [V-USB](https://www.obdev.at/products/vusb/index.html) to build a [USB communication device class (CDC)](https://en.wikipedia.org/wiki/USB_communications_device_class) for serial communication via USB with the ATtiny. The PWM value is send via the USB device. If the Value is "0" the Fan gets turned off. Example "echo "65" > /dev/ttyACM0"
 
 ![pic1.jpg](https://github.com/wagiminator/ATtiny85-TinyTerminal/blob/main/documentation/TinyTerminal_pic1.jpg)
 ![pic2.jpg](https://github.com/wagiminator/ATtiny85-TinyTerminal/blob/main/documentation/TinyTerminal_pic2.jpg)
@@ -35,7 +35,7 @@ The device will work under Linux out-of-the-box. Windows users need to install t
 To test the device you can open the Serial Monitor of the Arduino IDE and send a message. With Linux the port is usually /dev/ttyACM0. You can also send a message via a Terminal:
 
 ```
-echo "Hello World!\n" > /dev/ttyACM0
+echo "65" > /dev/ttyACM0
 ```
 
 **The device was only tested with Linux!**
